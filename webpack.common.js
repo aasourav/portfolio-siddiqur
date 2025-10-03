@@ -5,8 +5,8 @@ module.exports = {
     app: './js/app.js',
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public'), // now Webpack outputs to public/
     clean: true,
-    filename: './js/app.js',
+    filename: 'js/[name].js',
   },
 };
